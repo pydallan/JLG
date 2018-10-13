@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>嘉丽购-全国首家女性购物频道官方网站</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+<link href="css/header.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/head5.css" rel="stylesheet" type="text/css" media="all">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<!--lb.js 轮播图js -->
+<script type="text/javascript" src="js/lb.js"></script>
+
+
+<!-- 自己的JS代码 -->
+<!-- 商品列表 -->
+<script type="text/javascript" src="js/shougoodList.js"></script>
+<!-- 轮播图效果 -->
+<script type="text/javascript" src="js/JLGshouye.js"></script>
+<script type="text/javascript">
+function is_mobile() {
+var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+	var u = navigator.userAgent;
+    if (null == u) {
+      return true;
+    }
+    var result = regex_match.exec(u);
+     
+    if (null == result) {
+      return false
+    } else {
+      return true
+    }
+   }
+   if (is_mobile()) {
+     document.location.href= 'http://m.jialigou.cn/';
+   }
+</script>
+</head>
+<body>
+ 
+
+<div class="jialigou_head_box ">
+	<div class="jlg_top">
+		<div class="top_content">
+			<div class="top_call_sc">
+				<div class="call">电话热线：<strong>400-630-0077</strong></div>
+				<div class="sc_jlg"><a href="#">收藏嘉丽购</a></div>
+			</div>
+			<div class="jlg_user">
+			</div>
+			<div class="call_jlg">
+            	<a href="#" >手机嘉丽购
+                	<!-- <div class="sj">
+                    	<img src="imgaes/jlg_2d.jpg" alt="手机嘉丽购商城" width="123" height="123">
+                    </div> -->
+                </a></div>
+		</div>
+	</div>
+	<div class="head_content">
+		<h1 class="logo"><a title="返回首页" href="#"><img alt="嘉丽购-全国首家女性购物频道官方网站" src="images/ladygood.png" height="74" width="196"></a></h1>    
+        <!--<div style="width:170px; height:60px; position:absolute; left:210px; top:20px;"><a title="横扫天下 支付到嘉 支付宝支付立减28元" href="http://www.jialigou.cn/topics/304/" ><img alt="横扫天下 支付到嘉 支付宝支付立减28元" src="http://s.jialigou.cn/images2013/2015/02/0216/alipay.gif"/></a></div>-->
+		<div style="width:170px; height:60px; position:absolute; left:210px; top:20px;"><a href="#"><img alt="开学" src="images/yyy.gif"></a></div>
+		<div class="h_ladygood_search">
+			<div class="h_ladygood_swarch_one">
+			  <form name="search" action="http://www.jialigou.cn/search/" method="get">
+					<input type="text" class="search_input" style="color:#999; font-weight:normal;" name="keywords" id="keywords" value="请输入商品名称或电视销售编号">
+					<input type="image" class="search_but" name="submit" src="images/search.gif">
+			  </form>
+			</div>
+			<div class="h_swarch_m">
+				<span>热门搜索：</span>
+                
+                <a  href="#" class="a_s">限量抢购</a>
+				<a  href="#" class="a_s">TV直播</a>
+				<a  href="#" class="a_s">嘉丽购热销</a>
+                
+			</div>
+		</div>
+		
+		<div class="ZH_user" id="account_center">
+			<a href="#" class="u_a">我的账户</a>
+			<div class="zh_list" style="display:none" id="account_list_box">
+				<a href="#" >我的订单</a>
+				<a href="#" >我的积分</a>
+				<a href="#" >账户余额</a>
+				<a href="#" >优惠券</a>
+				<a href="#" >礼品卡</a>
+			</div>
+		</div>
+		<div class="shopp_cars">
+			<a href="html/JLG-jiesuan.html" class="u_a">我的购物车（<strong id="cartGoodNum">0</strong>）</a>
+		</div>
+	</div>
+	<div class="jlg_nav">
+	   <div class="nav_content">
+			<div class="FL_all" id="all_category">
+				<a href="javascript:;" class="FL_a"></a>
+				<div class="FL_list" id="category_list" style="display:none">
+					<a  href="#">护肤、化妆、美容</a>
+					<a  href="#">箱包、服饰、配饰</a>
+					<a  href="#">珠宝、收藏品</a>
+					<a  href="#">家居、厨房、日用</a>
+					<a  href="#">电脑、数码、家电</a>
+					<a  href="#">运动、健康、保健</a>
+				</div>
+			</div>
+			<div class="nav_list">
+				<a href="#" >首页</a>
+			</div>
+			<div class="nav_list">
+				<a href="#" >节目播出</a>
+				<!--<span class="lj"></span>-->
+                <span class="hot"></span>
+			</div>
+			<div class="nav_list">
+				<a href="#" >限量抢购</a>
+			</div>
+			<div class="nav_list">
+				<a href="#" >积分频道</a>
+				<!--<span class="hot"></span>-->
+			</div>
+			<div class="nav_list">
+				<a href="#" >新品惠</a>
+			</div>
+			<div class="nav_list">
+				<a href="#" >嘉和鲜</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--首页主体-->
+<div class="index_content">
+	<div class="index_A">
+		<div id="box" class="box_p">
+			
+<ul class="imgList"><li style="display: none;"><div style="background:url(http://i1.jialigou.cn/2015/0728/18/t_1438079494353.jpg) no-repeat  center 0px #ffeceb"><a href="#" title="水果来袭" >水果来袭</a></div></li><li style="display: list-item;"><div style="background:url(http://i1.jialigou.cn/2015/0402/19/t_1427974008184.jpg) no-repeat  center 0px #ffeceb"><a href="#" title="活力热销" >活力热销</a></div></li></ul></div>
+
+	</div>
+	<div class="TV_live">
+    	<h4>今日直播商品</h4>
+		<div id="line_tv">
+		</div>
+    </div>
+	<div class="ladygood_Classification_box">
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">TV品类</a> <a  href="#" style="margin-left:20px">樱桃抱抱团</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">新品上架</a> <a  href="html/JLG-CommodityList.html">昨日热播</a> <a  href="html/JLG-CommodityList.html">TV热销</a> <a  href="html/JLG-CommodityList.html">节目表</a> <a  href="html/JLG-CommodityList.html">看直播</a> </div>
+        </div>
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">护肤、化妆、美容</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">面部护理</a> <a  href="html/JLG-CommodityList.html">全身护理</a> <a  href="html/JLG-CommodityList.html">女性护理</a> <a  href="html/JLG-CommodityList.html">美容工具</a> <a  href="html/JLG-CommodityList.html">化妆用品</a> </div>
+        </div>
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">箱包、服饰、配饰</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">内衣</a> <a  href="html/JLG-CommodityList.html">女装</a> <a  href="html/JLG-CommodityList.html">男装</a> <a  href="html/JLG-CommodityList.html">配饰</a> <a  href="html/JLG-CommodityList.html">男鞋</a> <a  href="html/JLG-CommodityList.html">女鞋</a> <a  href="html/JLG-CommodityList.html">潮流女包</a> <a  href="html/JLG-CommodityList.html">功能箱包</a> <a  href="html/JLG-CommodityList.html">流行手表</a> <a  href="html/JLG-CommodityList.html">运动服</a> </div>
+        </div>
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">珠宝、收藏品</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">项链吊坠</a> <a  href="html/JLG-CommodityList.html">手链手镯</a> <a  href="html/JLG-CommodityList.html">戒指</a> <a  href="html/JLG-CommodityList.html">耳环</a> <a  href="html/JLG-CommodityList.html">套组</a> <a  href="html/JLG-CommodityList.html">投资收藏</a> </div>
+        </div>
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">家居、厨房、日用</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">家纺</a> <a  href="html/JLG-CommodityList.html">生活日用</a> <a  href="html/JLG-CommodityList.html">厨房日用</a> <a  href="html/JLG-CommodityList.html">家居生活</a> </div>
+        </div>
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">电脑、数码、家电</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">手机</a> <a  href="html/JLG-CommodityList.html">数码摄像</a> <a  href="html/JLG-CommodityList.html">大家电</a> <a  href="html/JLG-CommodityList.html">家居电器</a> <a  href="html/JLG-CommodityList.html">厨房电器</a> </div>
+        </div>
+        <div class="info_title">
+            <h3 class="bg_as"> <a target="_self" href="html/JLG-CommodityList.html">运动、健康、保健</a> </h3>
+            <div class="info_two_list"> <a  href="html/JLG-CommodityList.html">健身器材</a>   </div>
+        </div>
+        <div class="info_call_ads">
+			<a href="#"  class="wx">
+            	<img src="images/wx.jpg" width="198" height="90" alt="关注嘉丽购商城微信服务号">
+                <div class="erweima"><img src="images/wxm.jpg" width="166" height="166" alt="关注嘉丽购商城微信服务号"></div>
+            </a>
+		</div>
+	</div>
+</div>
+<div class="index_con_list">
+	<ul class="home_pp shangpin">
+			<!-- <div class="zw_1">
+		<a href="#"  title="依媚娇人">
+			<img width="136" height="250" src="images/t_1441621975358.jpg" alt="依媚娇人">
+		</a>
+		<span>依媚娇人</span>
+		<p>无钢圈魅力美胸内衣</p>
+	</div>
+	
+
+	</ul>
+	<!--限时抢购-->
+	<div class="qianggou">
+		<h3>限时抢购</h3>
+
+	</div>
+</div>
+<div class="index_con_list index_margin_gg">
+	<div class="index_left_s">
+		<div class="TVlive_goods">
+			<div class="tit_list">
+				<ul id="live" class="t_list">
+					<li id="today" class="on">今日直播</li>
+					<li id="yestoday">昨日热播</li>
+				</ul>
+				<!--<p>网站订购当天播出商品立减<strong> 10 </strong>元，在线支付再减<strong> 20 </strong></p>-->
+				<a href="#" class="zbb" >节目直播表&gt;&gt;</a>
+			</div>
+            <div class="tv_goods_today_yestoday">
+                <ul class="tv_goods_today shangpin2">
+				                	<!-- -------------- -->
+								
+					</ul>
+
+	<div class="tv_goods_yestoday" style="display:none;">
+					<div class="tv_list">
+												<a class="tv_googs_pic" href="#" >
+					<img src="images/s3_32981.jpg" alt="北极绒炫彩蕾丝提花美体衣5+5特供组" width="200" height="200">
+				</a>
+				<a class="tv_goods_name" href="#">
+					北极绒炫彩蕾丝提花美体衣5+5特供组				</a>
+				<div class="tv_p_txt">
+					<strong>￥199.00</strong>
+					<em>
+													已售：1840											</em>
+				</div>
+			</div>
+					<div class="tv_list">
+												<a class="tv_googs_pic" href="#" >
+					<img src="images/s3_33001.jpg" alt="韩束魔力保湿BB霜套组" width="200" height="200">
+				</a>
+				<a class="tv_goods_name" href="#">
+					韩束魔力保湿BB霜套组				</a>
+				<div class="tv_p_txt">
+					<strong>￥199.00</strong>
+					<em>
+													已售：44295											</em>
+				</div>
+			</div>
+					<div class="tv_list">
+												<a class="tv_googs_pic" href="#" >
+					<img src="images/s3_32554.jpg" alt="思家旺电动扫拖一体机1+1组" width="200" height="200">
+				</a>
+				<a class="tv_goods_name" href="#">
+					思家旺电动扫拖一体机1+1组				</a>
+				<div class="tv_p_txt">
+					<strong>￥299.00</strong>
+					<em>
+													已售：9725											</em>
+				</div>
+			</div>
+					<div class="tv_list">
+												<a class="tv_googs_pic" href="#" >
+					<img src="images/s3_32930.jpg" alt="朗圣洁生物活性固齿修复牙膏组" width="200" height="200">
+				</a>
+				<a class="tv_goods_name" href="#">
+					朗圣洁生物活性固齿修复牙膏组				</a>
+				<div class="tv_p_txt">
+					<strong>￥199.00</strong>
+					<em>
+													已售：20272											</em>
+				</div>
+			</div>
+					<div class="tv_list">
+												<a class="tv_googs_pic" href="#" >
+					<img src="images/s3_32292.jpg" alt="台湾宏惠多功能汉方养生壶1+1组" width="200" height="200">
+				</a>
+				<a class="tv_goods_name" href="#">
+					台湾宏惠多功能汉方养生壶1+1组				</a>
+				<div class="tv_p_txt">
+					<strong>￥268.00</strong>
+					<em>
+													已售：14437											</em>
+				</div>
+			</div>
+			</div>
+
+			</div>
+		</div>
+        <div class="web_goods">
+			<div class="tit_list">
+				<ul id="goods" class="t_list">
+					<li id="tv" class="on">TV新品</li>
+					<!-- <li id="web">网站专供</li>-->
+				</ul>
+				<a class="gx" href="javascript:void(0);" target="_self">换一批</a>
+			</div>
+			<div class="web_new_zg">
+				<div class="TV_new">
+	<div id="tvad" class="tv_web_left_ads">
+		
+	<ul><li style="display: block;">
+					<a href="#" >
+						<img src="images/t_1440993271909.jpg" alt="澳格菲 " width="200" height="400">
+					</a>
+					<div>
+						<strong>澳格菲 </strong>
+						<p>黄金紧致双提拉面膜</p>
+						<b>￥199.00</b>
+					</div>
+				</li><li style="display: none;">
+					<a href="#" >
+						<img src="images/t_144099327261.jpg" alt="韩代" width="200" height="400">
+					</a>
+					<div>
+						<strong>韩代</strong>
+						<p>电动磨刀神器1+3劲爆组 </p>
+						<b>￥199.00</b>
+					</div>
+				</li><li style="display: none;">
+					<a href="#" >
+						<img src="images/t_1440993271476.jpg" alt="雷谛" width="200" height="400">
+					</a>
+					<div>
+						<strong>雷谛</strong>
+						<p>台上式净水器特惠组 </p>
+						<b>￥298.00</b>
+					</div>
+				</li></ul><div class="nxt_list"><i class="on"></i><i class=""></i><i class=""></i></div></div>
+	<div class="tv_web_goods_list">
+		<div>
+												<div>
+								<div class="new_goods tv_margin">
+					<a class="pic" href="#" >
+						<img alt="U.S.POLO ASSN 时尚五防休闲男裤组" src="images/s4_33044.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						U.S.POLO ASSN 时尚五防休闲男裤组					</a>
+					<strong>￥289.00</strong>
+					<b>立减<br>10元</b>				</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="U.S.POLO ASSN 时尚绅士衬衣125周年纪念款" src="images/s4_33049.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						U.S.POLO ASSN 时尚绅士衬衣125周年纪念款					</a>
+					<strong>￥289.00</strong>
+					<b>立减<br>10元</b>				</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="梦萝莎时尚精品旅行箱套组" src="images/s4_33037.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						梦萝莎时尚精品旅行箱套组					</a>
+					<strong>￥389.00</strong>
+					<b>立减<br>10元</b>				</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="韩国CLARA破壁全营养料理机" src="images/s4_33024.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						韩国CLARA破壁全营养料理机					</a>
+					<strong>￥398.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="韩国CLARA升级多功能原汁机" src="images/s4_33018.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						韩国CLARA升级多功能原汁机					</a>
+					<strong>￥398.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="花开富贵羽柔被1+1套组" src="images/s4_33013.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						花开富贵羽柔被1+1套组					</a>
+					<strong>￥248.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="（0元抽奖）海斯曼懒人健康运动机" src="images/s4_33043.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						（0元抽奖）海斯曼懒人健康运动机					</a>
+					<strong>￥998.00</strong>
+									</div>
+									</div>
+																				<div>
+								<div class="new_goods tv_margin">
+					<a class="pic" href="#" >
+						<img alt="（0元抽奖）SWISS MILITARY超时尚炫彩箱包8件组" src="images/s4_33046.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						（0元抽奖）SWISS MILITARY超时尚炫彩箱包8件组					</a>
+					<strong>￥2800.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="费拉保罗 FERRA PAUL 百年经典贵族皮包组" src="images/s4_33019.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						费拉保罗 FERRA PAUL 百年经典贵族皮包组					</a>
+					<strong>￥189.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="雅诗兰黛弹性紧实面霜15ML*3" src="images/s4_33005.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						雅诗兰黛弹性紧实面霜15ML*3					</a>
+					<strong>￥299.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="韩束魔力保湿BB霜套组" src="images/s4_33001.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						韩束魔力保湿BB霜套组					</a>
+					<strong>￥199.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="奇美嘉舒适款收腹运动机" src="images/s4_32999.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						奇美嘉舒适款收腹运动机					</a>
+					<strong>￥189.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="五粮液东方娇子18瓶组" src="images/s4_32998.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						五粮液东方娇子18瓶组					</a>
+					<strong>￥989.00</strong>
+					<b>立减<br>10元</b>				</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="五粮液东方娇子12瓶超值组" src="images/s4_32997.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						五粮液东方娇子12瓶超值组					</a>
+					<strong>￥656.00</strong>
+					<b>立减<br>10元</b>				</div>
+									</div>
+																				<div>
+								<div class="new_goods tv_margin">
+					<a class="pic" href="#" >
+						<img alt="五粮液东方娇子6瓶组" src="images/s4_32990.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						五粮液东方娇子6瓶组					</a>
+					<strong>￥333.00</strong>
+					<b>立减<br>255元</b>				</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="泰光银楼幸福闪耀千足银手镯" src="images/s4_32987.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						泰光银楼幸福闪耀千足银手镯					</a>
+					<strong>￥228.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="德国*ALES大口径荣耀全钢锅具" src="images/s4_32993.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						德国*ALES大口径荣耀全钢锅具					</a>
+					<strong>￥999.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="宾爵时尚镂空真金自动机械男士手表（金面）" src="images/s4_32973.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						宾爵时尚镂空真金自动机械男士手表（金面）					</a>
+					<strong>￥999.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="宾爵时尚镂空真金自动机械男士手表（白面）" src="images/s4_32977.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						宾爵时尚镂空真金自动机械男士手表（白面）					</a>
+					<strong>￥999.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="FILA （斐乐）柔震运动休闲鞋" src="images/s4_32971.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						FILA （斐乐）柔震运动休闲鞋					</a>
+					<strong>￥499.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="韩国GUMZZI 英伦格纹中长款风衣" src="images/s4_32969.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						韩国GUMZZI 英伦格纹中长款风衣					</a>
+					<strong>￥199.00</strong>
+									</div>
+									</div>
+													</div>
+		<div id="tvgoodsad" class="tv_web_ads">
+			<ul>
+									<li>
+						<a href="#" >
+							<img src="images/t_1440993221979.jpg" alt="雪中飞 " width="473" height="199">
+						</a>
+					</li>
+									<li>
+						<a href="#" >
+							<img src="images/t_1440397884731.jpg" alt="寇驰" width="473" height="199">
+						</a>
+					</li>
+									<li>
+						<a href="#" >
+							<img src="images/t_1440397884244.jpg" alt="雷谛台上式净水器" width="473" height="199">
+						</a>
+					</li>
+							</ul>
+		</div>
+		<!-- <script>var tv_title=['雪中飞 ','寇驰','雷谛台上式净水器'];</script> -->
+	</div>
+</div>
+<div class="webzg_new" style="display:none;">
+	<div id="webad" class="tv_web_left_ads">
+		
+	<ul><li>
+					<a href="#" >
+						<img src="images/t_1414380361701.jpg" alt="宾爵 " width="200" height="400">
+					</a>
+					<div>
+						<strong>宾爵 </strong>
+						<p>时尚真钻全自动机械男表</p>
+						<b>￥999.00</b>
+					</div>
+				</li></ul><div><i></i></div></div>
+	<div class="tv_web_goods_list">
+		<div>
+												<div>
+								<div class="new_goods tv_margin">
+					<a class="pic" href="#" >
+						<img alt="精品柠檬16个装" src="images/s4_31356.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						精品柠檬16个装					</a>
+					<strong>￥68.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="新西兰绿果" src="images/s4_31819.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						新西兰绿果					</a>
+					<strong>￥75.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="美国新奇士橙" src="images/s4_31804.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						美国新奇士橙					</a>
+					<strong>￥98.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="陕西红富士" src="images/s4_31828.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						陕西红富士					</a>
+					<strong>￥118.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="特级红富士" src="images/s4_31794.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						特级红富士					</a>
+					<strong>￥158.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="水蜜桃9个装" src="images/s4_32419.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						水蜜桃9个装					</a>
+					<strong>￥65.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="西周蜜" src="images/s4_31814.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						西周蜜					</a>
+					<strong>￥78.00</strong>
+									</div>
+									</div>
+																				<div>
+								<div class="new_goods tv_margin">
+					<a class="pic" href="#" >
+						<img alt="树上熟木瓜" src="images/s4_31717.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						树上熟木瓜					</a>
+					<strong>￥60.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="皇冠梨" src="images/s4_31808.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						皇冠梨					</a>
+					<strong>￥58.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="雪梨" src="images/s4_31811.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						雪梨					</a>
+					<strong>￥48.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="台湾牛奶凤梨" src="images/s4_31551.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						台湾牛奶凤梨					</a>
+					<strong>￥89.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="金枕榴莲" src="images/s4_31718.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						金枕榴莲					</a>
+					<strong>￥94.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="红心猕猴桃16个装" src="images/s4_32938.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						红心猕猴桃16个装					</a>
+					<strong>￥87.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="美国蛇果15个装" src="images/s4_31827.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						美国蛇果15个装					</a>
+					<strong>￥108.00</strong>
+									</div>
+									</div>
+																				<div>
+								<div class="new_goods tv_margin">
+					<a class="pic" href="#" >
+						<img alt="佳沛金果16个装" src="images/s4_32497.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						佳沛金果16个装					</a>
+					<strong>￥168.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="牛油果9个装" src="images/s4_32327.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						牛油果9个装					</a>
+					<strong>￥168.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="神仙洞蜜桔3斤装" src="images/s4_32851.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						神仙洞蜜桔3斤装					</a>
+					<strong>￥29.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="库尔勒香梨12个" src="images/s4_31801.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						库尔勒香梨12个					</a>
+					<strong>￥38.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="库尔勒香梨45个" src="images/s4_31798.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						库尔勒香梨45个					</a>
+					<strong>￥78.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="朝慕思牌香辣鱼酱218g" src="images/s4_32629.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						朝慕思牌香辣鱼酱218g					</a>
+					<strong>￥19.00</strong>
+									</div>
+																			<div class="new_goods ">
+					<a class="pic" href="#" >
+						<img alt="朝慕思牌绿茶青干鱼500g" src="images/s4_32626.jpg" width="150" height="150">
+					</a>
+					<a class="name" href="#" >
+						朝慕思牌绿茶青干鱼500g					</a>
+					<strong>￥68.00</strong>
+									</div>
+									</div>
+													</div>
+		<div id="webgoodsad" class="tv_web_ads">
+			<ul>
+									<li>
+						<a href="#" >
+							<img src="images/t_1413776617132.jpg" alt="欧典梵高呼吸王牛皮男鞋组" width="473" height="199">
+						</a>
+					</li>
+							</ul>
+		</div>
+		<script>var web_title=['欧典梵高呼吸王牛皮男鞋组'];</script>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+	<div class="index_right_ph">
+        <h3>嘉丽购热销排行榜</h3>
+		<div class="ph_goods">
+				<div class="ph_g_list">
+		<span>No.1</span>
+		<div>
+			<a class="name" href="#" >（秒杀）10L盈成茶籽橄榄清香调和油组</a>
+			<strong>￥128.00</strong>
+			<a class="pic" href="#" >
+				<img alt="（秒杀）10L盈成茶籽橄榄清香调和油组" src="images/s4_28636.jpg" width="90" height="90">
+			</a>
+			<em>已售：58581</em>
+		</div>
+	</div>
+	<div class="ph_g_list">
+		<span>No.2</span>
+		<div>
+			<a class="name" href="#" >雪中飞经典商务衬衣领加绒保暖衫组</a>
+			<strong>￥168.00</strong>
+			<a class="pic" href="#" >
+				<img alt="雪中飞经典商务衬衣领加绒保暖衫组" src="images/s4_32928.jpg" width="90" height="90">
+			</a>
+			<em>已售：8233</em>
+		</div>
+	</div>
+	<div class="ph_g_list">
+		<span>No.3</span>
+		<div>
+			<a class="name" href="#" >（微信专享）20L禧又多土榨菜籽油组</a>
+			<strong>￥199.00</strong>
+			<a class="pic" href="#" >
+				<img alt="（微信专享）20L禧又多土榨菜籽油组" src="images/s4_32577.jpg" width="90" height="90">
+			</a>
+			<em>已售：26065</em>
+		</div>
+	</div>
+	<div class="ph_g_list">
+		<span>No.4</span>
+		<div>
+			<a class="name" href="#" >北大荒东北秋木耳健康组</a>
+			<strong>￥199.00</strong>
+			<a class="pic" href="#" >
+				<img alt="北大荒东北秋木耳健康组" src="images/s4_32341.jpg" width="90" height="90">
+			</a>
+			<em>已售：12128</em>
+		</div>
+	</div>
+	<div class="ph_g_list">
+		<span>No.5</span>
+		<div>
+			<a class="name" href="#" >雅诗兰黛即时修护眼部精华霜5ML*3</a>
+			<strong>￥299.00</strong>
+			<a class="pic" href="#" >
+				<img alt="雅诗兰黛即时修护眼部精华霜5ML*3" src="images/s4_32839.jpg" width="90" height="90">
+			</a>
+			<em>已售：6785</em>
+		</div>
+	</div>
+
+		</div>
+	</div>
+</div>
+<div class="T_ads">
+	<a href="#" >
+		<img src="images/t_1440993851687.jpg" alt="梦萝莎精品旅行箱套组" width="1200" height="100">
+	</a>
+</div>
+<div class="index_ads">
+						<div class="ads_list ads_margin">
+				<div class="ads_txt">
+					<p>波司登水洗棉牛仔裤</p>
+											<strong>￥298.00</strong>
+									</div>
+				<a href="#" >
+					<img src="images/t_1440993586449.jpg" alt="波司登水洗棉牛仔裤" width="200" height="300">
+				</a>
+			</div>
+								<div class="ads_list ">
+				<div class="ads_txt">
+					<p>SWISS MILITARY箱包</p>
+											<strong>￥988.00</strong>
+									</div>
+				<a href="#" >
+					<img src="images/t_1440993586641.jpg" alt="SWISS MILITARY箱包" width="200" height="300">
+				</a>
+			</div>
+								<div class="ads_list ">
+				<div class="ads_txt">
+					<p>台湾宏惠汉方养生壶</p>
+											<strong>￥258.00</strong>
+									</div>
+				<a href="#" >
+					<img src="images/t_1440993586540.jpg" alt="台湾宏惠汉方养生壶" width="200" height="300">
+				</a>
+			</div>
+								<div class="ads_list ">
+				<div class="ads_txt">
+					<p>宜宾五粮液五龙宾红樽</p>
+											<strong>￥256.00</strong>
+									</div>
+				<a href="#" >
+					<img src="images/t_1440993586649.jpg" alt="宜宾五粮液五龙宾红樽" width="200" height="300">
+				</a>
+			</div>
+								<div class="ads_list ">
+				<div class="ads_txt">
+					<p>宾爵真钻全自动机械男表</p>
+											<strong>￥989.00</strong>
+									</div>
+				<a href="#" >
+					<img src="images/t_1440993586883.jpg" alt="宾爵真钻全自动机械男表" width="200" height="300">
+				</a>
+			</div>
+								<div class="ads_list ">
+				<div class="ads_txt">
+					<p>亮之家水精灵洗衣机套组</p>
+											<strong>￥288.00</strong>
+									</div>
+				<a href="#" >
+					<img src="images/t_1440993586426.jpg" alt="亮之家水精灵洗衣机套组" width="200" height="300">
+				</a>
+			</div>
+								<div class="ads_list_s">
+				<a href="#" >
+					<img src="images/t_1440993597524.jpg" alt="宝家洁自动拧水平板拖" width="570" height="300">
+				</a>
+			</div>
+				<div id="indexad" class="ads_s">
+		<ul>
+						<li>
+				<a href="#" >
+					<img src="images/t_1440993447796.jpg" alt="艾帝欧不锈钢大口径锅具 " width="570" height="300">
+				</a>
+			</li>
+						<li>
+				<a href="#" >
+					<img src="images/t_1440993447177.jpg" alt="路易乔登立领绵羊皮夹克" width="570" height="300">
+				</a>
+			</li>
+						<li>
+				<a href="#" >
+					<img src="images/t_1440993447938.jpg" alt="泉茗兴特级铁观音" width="570" height="300">
+				</a>
+			</li>
+					</ul>
+		<script>var ad_title=['艾帝欧不锈钢大口径锅具 ','路易乔登立领绵羊皮夹克','泉茗兴特级铁观音'];</script>
+	</div>
+</div>
+<!--服务区-->
+<div class="user_con_fw">
+	<div class=" title_next">
+		<div class="fw_title">欢迎您进入服务社区</div>
+		<div class="fw_jlg_news">
+			<ul>
+							<li>
+			<a href="#"  title="百万让利·年中庆 活动中奖名单">
+				百万让利·年中庆 活动中奖名单			</a>
+		</li>
+			<li>
+			<a href="#"  title="嘉丽购物有限责任公司节目制作部景片道具招标结果">
+				嘉丽购物有限责任公司节目制作部景片道具招标结果			</a>
+		</li>
+			<li>
+			<a href="#"  title="嘉丽购2014年度保安保洁服务项目公开招标公告">
+				嘉丽购2014年度保安保洁服务项目公开招标公告			</a>
+		</li>
+	
+			</ul>
+		</div>
+		<a class="more" href="#" >更多&gt;&gt;</a>
+	</div>
+	<div class="kj_fw">
+		<a href="html/JLG-Login.html"  style="margin-left:30px;">登 录</a>
+		<a href="#" >免费注册</a>
+		<a href="#"  style="width:90px; margin-left:50px">电视用户激活</a>
+		<a href="#"  style="margin-left:48px;">我的账户</a>
+		<a href="#"  style="margin-left:55px;">我的评价</a>
+		<a href="#" >我的收藏</a>
+		<a href="#" >订单查询</a>
+		<a href="#" >节目查询</a>
+		<a href="#" >物流查询</a>
+	</div>
+</div>
+<!-- --------------------------------------------主体结束---------------------------------------------------> -->
+
+    
+    
+<div id="backtop" class="backtop" style="display:block"; width:"50px"; height:"50px";>回到顶部</div>
+<!--尾部
+<!--尾部-->
+<div class="foot_box">
+	<div class="f_help">
+		<div class="f_h_content">
+			<div class="f_2d">嘉丽购手机商城</div>
+			<div class="f_help_list">
+				<div class="f_h_list">
+					<strong>购物指南</strong>
+					<a href="#" >新用户注册/激活</a>
+					<a href="#" >如何订购</a>
+					<a href="#" >常见问题</a>
+				</div>
+				<div class="f_h_list">
+					<strong>会员中心</strong>
+					<a href="#" >会员权益</a>
+					<a href="#" >美丽积分</a>
+					<a href="#" >订单查询</a>
+					<a href="#" >找回密码</a>
+				</div>
+				<div class="f_h_list">
+					<strong>配送服务</strong>
+					<a href="#" >物流跟踪</a>
+					<a href="#" >配送说明</a>
+					<a href="#" >运费说明</a>
+				</div>
+				<div class="f_h_list">
+					<strong>支付说明</strong>
+					<a href="#" >货到付款</a>
+					<a href="#" >在线支付</a>
+				</div>
+				<div class="f_h_list">
+					<strong>售后服务</strong>
+					<a href="#" >退换货政策</a>
+					<a href="#" >退换货流程</a>
+					<a href="#" >安全与保密</a>
+				</div>
+			</div>
+			<div class="call_rz">官方客服-百度安全认证-4006300077</div>
+		</div>
+	</div>
+	<div class="foot_sv">
+		<div class="sv_con">正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付</div>
+	</div>
+	<div class="foot_txt">
+		<p><a href="#" target="_self">商城首页</a> | <a href="#" >官网首页</a> | <a href="#" >供应商登录</a> | <a href="#" >供货联系</a> | <a  onclick="addToFavorite();" href="#">收藏我们</a> | <a href="#" >公司简介</a> | <a href="#" >媒体报道</a> | <a href="#" >嘉丽购招聘</a> | <a href="#" >官方微博</a> | <a href="#" >合作网站：范游网</a></p>
+		<p>嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved 国家广电总局批号：广局[2010] 278号<a style="color:#999" href="#" >湘ICP备10203162号-3</a></p>
+		<p class="rz">
+        	<a href="#" >
+				<img src="images/xk.jpg" alt="经营许可证">	
+            </a>
+			
+				<img src="images/kx.jpg" alt="认证联盟 可信网站">
+			
+			<a href="#" >
+				<img src="images/360.jpg" alt="安全联盟认证">
+			</a>								
+				<img src="images/alipay_s.gif" alt="支付宝特约商家">
+			<a href="#" ><img src="images/hn110_s.gif" alt="网络110报警"></a>
+		</p>
+	</div>
+</div>
+<!--尾部 end-->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+</body></html>
